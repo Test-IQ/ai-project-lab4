@@ -1,16 +1,24 @@
-@"
+@'
 venv/
 .venv/
 __pycache__/
+*.py[cod]
 *.pt
+*.pth
 *.h5
 *.ckpt
 *.safetensors
 *.onnx
 data/
+datasets/
 models/
 outputs/
 .env
+.env.*
+!.env.example
 *.log
+.vscode/
+.idea/
 .DS_Store
-"@ | Out-File -Encoding utf8 .gitignore
+Thumbs.db
+'@ | Set-Content -Encoding utf8 .gitignore
